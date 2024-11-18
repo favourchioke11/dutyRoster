@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.login{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+.login form.login{
+    width: 30%;
+    border: 1px solid gray;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.login h3{
+    margin: 10px;
+}
+
+.login form.login div{
+    display: flex;
+    flex-direction: column;
+}
+
+.login form.login div input{
+    width: 100%;
+    padding: 5px 10px;
+    /* border:2px solid red; */
+}
+
+.login .button{
+    outline: none;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    background-color: rgba(41, 41, 253, 0.806) ;
+    color: #fff;
+
+}
+
+/* header */
+header{
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+}
+
+
+.container-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    height: auto;
+    /* border: 1px solid gray; */
+    width: 50%;
+    padding: 20px;
+}
+
+.content table{
+    width: 100%;
+}
+
+table tr td,th{
+    padding: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+    .container-table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content{
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
+
