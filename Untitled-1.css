@@ -1,0 +1,734 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.success-alert{
+    background-color: rgb(110, 186, 110);
+    color: rgb(16, 91, 16);
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+    margin: 10px auto;
+}
+
+/* LAPTOP VIEW FOR NAVIGATION */
+@media (min-width: 768px) and (max-width: 1440px) {
+
+    header{
+        margin-top: 12rem;
+        /* background-color: red; */
+        width: 100%;
+    }
+
+    .nav-link{
+        display: block;
+    }
+
+    .nav-item{
+        margin: 5px 30px;
+        padding: 10px;
+    }
+
+    .nav-list{
+        display: flex;
+        gap: 60px;
+    }
+
+    .nav-list li{
+        list-style: none;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .nav-list li a{
+        list-style: none;
+        color: #000000;
+        text-decoration: none;
+        cursor: pointer;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    h4{
+        font-size: 25px;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+}
+
+
+/* TABLET VIEW FOR NAVIGATION */
+@media (min-width: 425px) and (max-width: 768px) {
+    header{
+        margin-top: 17rem;
+        /* background-color: red; */
+        width: 100%;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .nav-list{
+        display: flex;
+        gap: 60px;
+    }
+
+    .nav-list li{
+        list-style: none;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .nav-list li a{
+        list-style: none;
+        color: #000000;
+        text-decoration: none;
+        cursor: pointer;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    h4{
+        font-size: 25px;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+
+ 
+}
+
+
+/* MOBILE VIEW FOR NAVIGATION */
+@media only screen and (max-width: 425px) {}
+
+
+
+/* LAPTOP VIEW FOR REGISTRATION */
+@media (min-width: 768px) and (max-width: 1440px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Times New Roman', Times, serif;
+        /* flex-direction: column; */
+    }
+
+    .register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+        width: 100%;
+        max-width: 450px;
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    .register form input {
+        /* display: block; */
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 0px 1px 0px;
+    }
+
+    /* .register form input button{
+
+    } */
+}
+
+
+/* TABLET VIEW FOR REGISTRATION */
+@media (min-width: 425px) and (max-width: 768px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Times New Roman', Times, serif;
+        /* flex-direction: column; */
+    }
+
+    .register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+        width: 100%;
+        max-width: 400px;
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    .register form input {
+        /* display: block; */
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 0px 1px 0px;
+    }
+
+    /* .register form input button{
+
+    } */
+
+}
+
+/* MOBILE VIEW FOR REGISTRATION */
+@media only screen and (max-width: 425px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Times New Roman', Times, serif;
+        /* flex-direction: column; */
+    }
+
+    .register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        width: 100%;
+        max-width: 250px;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .register form input {
+        /* display: block; */
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 300px;
+        padding: 7px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 0px 1px 0px;
+    }
+
+    /* .register form input button{
+
+    } */
+
+}
+
+/* LAPTOP VIEW FOR LOGIN */
+@media (min-width: 768px) and (max-width: 1440px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Times New Roman', Times, serif;
+        /* flex-direction: column; */
+    }
+
+    .login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7rem;
+        width: 100%;
+        max-width: 450px;
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    .login form input {
+        /* display: block; */
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 0px 1px 0px;
+    }
+
+    /* .login form input button{
+
+    } */
+}
+
+/* TABLET VIEW FOR LOGIN */
+@media (min-width: 425px) and (max-width: 768px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Times New Roman', Times, serif;
+        /* flex-direction: column; */
+    }
+
+    .login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+        width: 100%;
+        max-width: 400px;
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    .login form input {
+        /* display: block; */
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 0px 1px 0px;
+    }
+
+    /* .login form input button{
+
+    } */
+
+}
+
+/* MOBILE VIEW FOR LOGIN */
+@media only screen and (max-width: 425px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Times New Roman', Times, serif;
+        /* flex-direction: column; */
+    }
+
+    .login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        width: 100%;
+        max-width: 250px;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .login form input {
+        /* display: block; */
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 300px;
+        padding: 7px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 0px 1px 0px;
+    }
+
+    /* .login form input button{
+
+    } */
+
+}
+
+/* LAPTOP VIEW FOR ADD TASK */
+@media (min-width: 768px) and (max-width: 1440px) {
+
+    .addtask {
+        margin: 30px;
+    }
+
+    .addtask h4 {
+        /* margin-top: -4rem; */
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .addtask form .form-group {
+        background-color: #ffffff;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .addtask form .form-group label {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 10px;
+    }
+
+    .addtask form .form-group .form-control {
+        background-color: #eee;
+        padding: 15px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 0px 1px 0px;
+        text-transform: capitalize;
+    }
+
+    .addtask form .btn {
+        /* background-color: #3498db; */
+        color: #ffffff;
+        padding: 15px;
+        margin-top: 25px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 95%;
+        margin-left: 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+
+}
+
+
+/* TABLET VIEW FOR ADD TASK */
+@media (min-width: 425px) and (max-width: 768px) {
+
+    .addtask {
+        margin: 30px;
+    }
+
+    .addtask h4 {
+        /* margin-top: 4rem; */
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .addtask form .form-group {
+        background-color: #ffffff;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .addtask form .form-group label {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 10px;
+    }
+
+    .addtask form .form-group .form-control {
+        background-color: #eee;
+        padding: 25px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 0px 1px 0px;
+        text-transform: capitalize;
+    }
+
+    .addtask form .btn {
+        color: #ffffff;
+        padding: 15px;
+        margin-top: 25px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 90%;
+        margin-left: 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+}
+
+
+/* MOBILE VIEW FOR ADD TASK */
+@media only screen and (max-width: 425px) {
+
+    .addtask {
+        margin: 30px;
+    }
+
+    .addtask h4 {
+        margin-top: 4rem;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .addtask form .form-group {
+        background-color: #ffffff;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .addtask form .form-group label {
+        font-size: 20px;
+        text-transform: capitalize;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 10px;
+    }
+
+    .addtask form .form-group .form-control {
+        background-color: #eee;
+        padding: 20px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 0px 1px 0px;
+        text-transform: capitalize;
+    }
+
+    .addtask form .btn {
+        color: #ffffff;
+        padding: 10px;
+        margin-top: 25px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 80%;
+        margin-left: 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+}
+
+/* LAPTOP VIEW FOR TABLE */
+@media (min-width: 768px) and (max-width: 1440px) {
+
+    .container-table {
+        width: 100%;
+        overflow-x: scroll;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    .container-table h4 {
+        margin: 40px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .container-table table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 40px;
+
+    }
+
+    table th, td {
+        border: 1.5px solid #000000a1;
+        padding: 15px;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    table th {
+        background-color: #eee;
+        font-size: 20px;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    table tr:hover {
+        background-color: #ddd;
+    }
+
+    .container td .dropdown a {
+        /* display: none; */
+        padding: 20px;
+    }
+
+    .container-table td .dropdown {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .container-table td .btn-action {
+        padding: 3px;
+        margin: 10px;
+    }
+
+
+
+}
+
+
+/* TABLET VIEW FOR TABLE */
+
+@media (min-width: 425px) and (max-width: 768px) {
+
+    .container-table {
+        width: 100%;
+        margin-left: 20px;
+        overflow: scroll;
+        margin-right: 5px;
+    }
+
+    .container-table h4 {
+        margin: 40px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .container-table table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 40px;
+
+    }
+
+    table th, td {
+        border: 1.5px solid #000000a1;
+        padding: 15px;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    table th {
+        background-color: #eee;
+        font-size: 20px;
+    }
+
+    table td {
+        font-size: 20px;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    table tr:hover {
+        background-color: #ddd;
+    }
+
+    .container td .dropdown a {
+        /* display: none; */
+        padding: 20px;
+    }
+
+    .container-table td .dropdown {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-table td .btn-action {
+        padding: 3px;
+        margin: 10px;
+    }
+
+
+}
+
+
+/* MOBILE VIEW FOR TABLE*/
+
+@media only screen and (max-width: 425px) {
+    .container-table {
+        width: 100%;
+        margin-left: 20px;
+        overflow: scroll;
+        margin-right: 5px;
+    }
+
+    .container-table h4 {
+        margin: 40px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .container-table table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 40px;
+
+    }
+
+    table th, td {
+        border: 1.5px solid #000000a1;
+        padding: 15px;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    table th {
+        background-color: #eee;
+        font-size: 20px;
+    }
+
+    table td {
+        font-size: 20px;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    table tr:hover {
+        background-color: #ddd;
+    }
+
+    .container td .dropdown a {
+        /* display: none; */
+        padding: 20px;
+    }
+
+    .container-table td .dropdown {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-table td .btn-action {
+        padding: 3px;
+        margin: 10px;
+    }
+
+
+}
